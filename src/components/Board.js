@@ -10,6 +10,9 @@ const Board = ({ cells, onClick }) => {
                         key={index}
                         value={item}
                         onClick={() => onClick(index)}
+                        className={
+                            item === "X" ? "is-x" : item === "O" ? "is-o" : ""
+                        }
                     />
                 ))}
             </div>

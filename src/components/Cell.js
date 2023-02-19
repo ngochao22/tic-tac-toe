@@ -1,8 +1,8 @@
 import React from "react";
 
-const Cell = ({ value, onClick }) => {
+const Cell = ({ value, onClick, className }) => {
     return (
-        <div className="game-cell" onClick={onClick}>
+        <div className={`game-cell ${className}`} onClick={onClick}>
             {value}
         </div>
     );

@@ -25,7 +25,9 @@ const Game = () => {
             <div className="game-title">
                 {winner ? `Winner is ${!xIsNext ? "X" : "O"}` : ""}
             </div>
-            <button onClick={handleResetGame}>Reset Game</button>
+            <button className="game-reset" onClick={handleResetGame}>
+                Reset Game
+            </button>
         </div>
     );
 };
